@@ -13,6 +13,11 @@ app.get('/about', (req, res) => {
   res.send('This is the about page.');
 });
 
+app.get('/data', (req, res) => {
+  res.send('Use POST to send JSON data to this route.');
+});
+
+
 app.post('/data', (req, res) => {
   res.json(req.body);
 });
